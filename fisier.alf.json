@@ -1,0 +1,87 @@
+{
+    "symbol_table": {
+        "script": {
+            "type": "script",
+            "variables": {
+                "a": {
+                    "type": "bool",
+                    "line": 5,
+                    "parameter": false
+                }
+            },
+            "functions": {
+                "writeint": {
+                    "type": "none",
+                    "parameters": [
+                        {
+                            "type": "int",
+                            "title": "nr",
+                            "line": 3
+                        }
+                    ],
+                    "use": "io",
+                    "line": 3
+                }
+            },
+            "types": {}
+        },
+        "function_writeint": {
+            "title": "writeint",
+            "type": "function",
+            "use": "io",
+            "return_type": "none",
+            "parent": "script",
+            "variables": {
+                "nr": {
+                    "type": "int",
+                    "parameter": true,
+                    "index": 0
+                }
+            },
+            "functions": {},
+            "types": {}
+        }
+    },
+    "ast": {
+        "script": {
+            "statements": [
+                {
+                    "id": "attr",
+                    "to": {
+                        "id": "identifier",
+                        "title": "a",
+                        "symbol_table": "script",
+                        "line": 5,
+                        "type": "bool"
+                    },
+                    "from": {
+                        "id": "value",
+                        "type": "bool",
+                        "value": false,
+                        "line": 5,
+                        "symbol_table": "script"
+                    },
+                    "line": 5,
+                    "type": "none"
+                },
+                {
+                    "id": "function_call",
+                    "title": "writeint",
+                    "parameters": {
+                        "nr": {
+                            "id": "identifier",
+                            "title": "a",
+                            "line": 7,
+                            "symbol_table": "script",
+                            "type": "bool"
+                        }
+                    },
+                    "line": 7,
+                    "symbol_table": "script",
+                    "type": "none"
+                }
+            ]
+        }
+    },
+    "errors": []
+}

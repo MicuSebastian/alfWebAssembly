@@ -1,0 +1,11 @@
+{
+  "name": "devoir5",
+  "version": "1.0.0",
+  "description": "Micu Sebastian\r 1220BF",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Micu Sebastian",
+  "license": "ISC"
+}
